@@ -22,16 +22,15 @@ class Product(models.Model):
     adding_date = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return (f'Username: {self.name}, description: {self.description}, price: {self.price}, '
-                f'address: {self.quantity}, register date:{self.adding_date}')
+        return (f'Product_name: {self.name}, description: {self.description}, price: {self.price}, '
+                f'quantity: {self.quantity}, adding date:{self.adding_date}')
 
 
 class Order(models.Model):
-    client_id = models.ForeignKey(Client, on_delete=models.CASCADE)
-    product_id = models.ManyToManyField(Product)
-    total_price = models.DecimalField(decimal_places=2, max_digits=10)
+    client_id = models.ForeignKey(Client, on_delete=models.CASCADE, null=False)
+    product_id = models.ManyToManyField(Product, unique=False)
+    total_price = models.DecimalField(decimal_places=2, max_digits=10, default=0)
     ordering_date = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return (f'client_id: {self.client_id}, product_id: {self.product_id}, total price: {self.total_price}, '
-                f'ordering date: {self.ordering_date}')
+        return f'total price: {self.total_price}, ordering date: {self.ordering_date}'

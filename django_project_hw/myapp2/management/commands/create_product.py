@@ -9,7 +9,7 @@ class Command(BaseCommand):
         parser.add_argument('name', type=str, help='name')
         parser.add_argument('description', type=str, help='description')
         parser.add_argument('price', type=float, help='price')
-        parser.add_argument('quantity', type=str, help='quantity')
+        parser.add_argument('quantity', type=int, help='quantity')
 
     def handle(self, *args, **kwargs):
         name = kwargs.get('name')
