@@ -23,6 +23,6 @@ example: http://127.0.0.1:8000/orders/1/last_week
 
 # 4th homework
 
-product upload page on `http://127.0.0.1:8000/orders/add_product`  (view and url located in myapp3)
+product upload page on http://127.0.0.1:8000/orders/add_product  (view and url located in myapp3)
 
 in myapp2 only Product class in models.py was updated
