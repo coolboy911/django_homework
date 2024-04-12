@@ -10,7 +10,7 @@ class Client(models.Model):
     register_date = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return (f'Username: {self.name}, email: {self.email}, phone number: {self.phone_number}, '
+        return (f'name: {self.name}, email: {self.email}, phone number: {self.phone_number}, '
                 f'address: {self.address}, register date:{self.register_date}')
 
 
