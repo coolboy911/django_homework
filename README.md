@@ -26,3 +26,20 @@ example: http://127.0.0.1:8000/orders/1/last_week
 product upload page on http://127.0.0.1:8000/orders/add_product  (view and url located in myapp3)
 
 in myapp2 only Product class in models.py was updated
+
+
+# 5th homework (admin panel)
+
+most of work was done in myapp2/admin.py 
+
+to get into admin system go to http://127.0.0.1:8000/admin and use this login data
+
+login: admin
+
+password: test
+
+
+
+
+
+
