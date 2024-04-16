@@ -1,0 +1,5 @@
+/django_project_hw/media/
+/django_project_hw/static/
+*.sqlite3
+*.log
+*.pyc
